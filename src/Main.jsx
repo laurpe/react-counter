@@ -1,6 +1,6 @@
-import React, { useState, Component } from "react";
+import React, { Component } from "react";
 import Circle from "./Circle";
-// import Button from "./Button";
+import Button from "./Button";
 
 class Main extends Component {
     state = { counter: 0 };
@@ -34,11 +34,11 @@ class Main extends Component {
             <div className="main">
                 <Circle count={this.state.counter} />
                 <div className="buttons">
-                    <button onClick={this.addFive}>Add five</button>
-                    <button onClick={this.addOne}>Add one</button>
-                    <button onClick={this.reset}>Reset</button>
-                    <button onClick={this.removeOne}>Remove one</button>
-                    <button onClick={this.removeFive}>Remove five</button>
+                    <Button onClick={this.addFive} text="Add five" />
+                    <Button onClick={this.addOne} text="Add one" />
+                    <Button onClick={this.reset} text="Reset" />
+                    <Button onClick={this.removeOne} text="Remove one" />
+                    <Button onClick={this.removeFive} text="Remove five" />
                 </div>
             </div>
         );
