@@ -60,3 +60,7 @@ button {
     font-size: 3rem;
     margin: 20px;
 }
+
+.odd {
+    background-color: rgb(69, 189, 149);
+}
