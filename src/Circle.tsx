@@ -1,6 +1,10 @@
 import React from "react";
 
-const Circle = ({ count }) => {
+interface Props {
+    count: number;
+}
+
+const Circle = ({ count }: Props) => {
     if (count % 2 !== 0) {
         return <div className="circle odd">{count}</div>;
     }

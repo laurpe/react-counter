@@ -2,12 +2,12 @@ import React, { Component } from "react";
 import Circle from "./Circle";
 import Button from "./Button";
 
-class Main extends Component {
-    state = { counter: 0 };
+interface State {
+    counter: number;
+}
 
-    handleClick = () => {
-        console.log("button clicked");
-    };
+class Main extends Component<{}, State> {
+    state = { counter: 0 };
 
     addFive = () => {
         this.setState({ counter: this.state.counter + 5 });
