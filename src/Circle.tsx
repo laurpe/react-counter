@@ -1,4 +1,5 @@
 import React from "react";
+import classes from "./Circle.module.css";
 
 interface Props {
     count: number;
@@ -6,9 +7,11 @@ interface Props {
 
 const Circle = ({ count }: Props) => {
     if (count % 2 !== 0) {
-        return <div className="circle odd">{count}</div>;
+        return (
+            <div className={`${classes.circle} ${classes.odd}`}>{count}</div>
+        );
     }
-    return <div className="circle">{count}</div>;
+    return <div className={classes.circle}>{count}</div>;
 };
 
 export default Circle;

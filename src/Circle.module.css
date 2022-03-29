@@ -1,0 +1,15 @@
+.circle {
+    display: flex;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(112, 162, 255);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    margin: 20px;
+}
+
+.odd {
+    background-color: rgb(69, 189, 149);
+}

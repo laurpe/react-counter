@@ -12,15 +12,6 @@ body {
     color: white;
 }
 
-button {
-    background-color: var(--color-primary);
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    width: 15%;
-}
-
 .header,
 .footer {
     background-color: var(--color-primary);
@@ -47,20 +38,4 @@ button {
     justify-content: space-around;
     width: 100%;
     margin: 20px;
-}
-
-.circle {
-    display: flex;
-    width: 250px;
-    height: 250px;
-    background-color: rgb(112, 162, 255);
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    margin: 20px;
-}
-
-.odd {
-    background-color: rgb(69, 189, 149);
 }
